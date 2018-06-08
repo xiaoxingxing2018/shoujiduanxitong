@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人信息</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/个人信息.css">
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+    <script src="js/windowback.js"></script>
+	<script>
+        window.onload = window.onresize = function(){
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+
+            var _html = document.getElementsByTagName('html')[0];
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        }
+    </script>
+</head>
+<body>
+    <div class="top gWidth">
+        <div class="shang clearfix">
+          <a class="fl" href="#" onclick="back()">&lt;</a>
+          <a class="fr" href="设置.html"><img src="images/shezhi.png" alt=""></a>
+        </div>
+        <div class="xia">
+            <a href="x详情_头像.html"><img src="images/morentouxiang.png" alt=""></a>
+        </div>
+        <div class="xia_r">
+            <span>昵称</span><a href=""><img src="images/shuaxin.png" alt=""></a>
+       </div>
+    </div>
+	<div class="xinxi">
+       <p class="c_hui">没有签名</p>
+       <p class="c_red">我的余额：<span>0.00</span>元</p>
+	</div>
+    <div class="pj_sq">
+       <a class="pj_a c_hui" href="p评价列表.html">
+         <span class="fl"><em class="c_red">0</em>客户评价</span>
+         <span class="fr sp2 c_red">&gt;</span>
+         <span class="fr"><em class="c_red">0%</em>好评率</span>
+       </a>
+       <a class="sq_a" href="申请服务商.html">申请服务商</a>
+    </div>
+</body>
+</html>

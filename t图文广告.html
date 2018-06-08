@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<script src="js/windowback.js"></script>
+	<script>
+        window.onload = window.onresize = function(){
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+
+            var _html = document.getElementsByTagName('html')[0];
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        }
+    </script>
+</head>
+<body>
+	<div class="top gWidth">
+		<a href="#" onclick="back()" class="return"></a>
+		<h6>图文广告</h6>
+		<a href="#" id="filter"></a>
+		
+		<ul id="box2">
+			<li class="active">离我最近</li>
+			<li>价格最高</li>
+			<li>价格最低</li>
+			<li>好评优先</li>
+		</ul>   
+	</div>
+	<script>
+       var ofilter = document.getElementById('filter');
+       var obox2 = document.getElementById('box2');
+       var oli = obox2.getElementsByTagName('li');
+
+       ofilter.onclick = function() {
+       		if (obox2.style.height == '8.4rem'){
+       			obox2.style.height = '0';
+       		}else{
+       			obox2.style.height = '8.4rem';
+       		}
+       }
+       for (var i = 0; i < oli.length; i++) {
+       	oli[i].onclick = function (){
+       		for (var i = 0; i < oli.length; i++){
+       			oli[i].className = '';
+       		}
+       		this.className = 'active';
+       		 ofilter.onclick();
+
+       	}
+       }
+
+    </script>
+
+	
+	
+	<div class="cont gWidth">
+		<a href="g个人介绍_2.html"><ul class="intro gWidth">
+			<li class="left"><span><img src="" alt=""></span></li>
+			<li class="cent">
+				<h6><span class="fl">服务内容-称呼</span><em class="fr">1000千米</em></h6>
+				<h6><strong class="fl"><img src="images/weixiuweihu/star.jpg" alt=""></strong><strong class="fr">0.00元</strong></h6>
+			</li>
+			<li class="right fr"></li>
+		</ul></a>
+		<a href="g个人介绍_2.html"><ul class="intro gWidth">
+			<li class="left"><span><img src="" alt=""></span></li>
+			<li class="cent">
+				<h6><span class="fl">服务内容-称呼</span><em class="fr">1000千米</em></h6>
+				<h6><strong class="fl"><img src="images/weixiuweihu/star.jpg" alt=""></strong><strong class="fr">0.00元</strong></h6>
+			</li>
+			<li class="right fr"></li>
+		</ul></a>
+		<a href="g个人介绍_2.html"><ul class="intro gWidth">
+			<li class="left"><span><img src="" alt=""></span></li>
+			<li class="cent">
+				<h6><span class="fl">服务内容-称呼</span><em class="fr">1000千米</em></h6>
+				<h6><strong class="fl"><img src="images/weixiuweihu/star.jpg" alt=""></strong><strong class="fr">0.00元</strong></h6>
+			</li>
+			<li class="right fr"></li>
+		</ul></a>
+		<a href="g个人介绍_2.html"><ul class="intro gWidth">
+			<li class="left"><span><img src="" alt=""></span></li>
+			<li class="cent">
+				<h6><span class="fl">服务内容-称呼</span><em class="fr">1000千米</em></h6>
+				<h6><strong class="fl"><img src="images/weixiuweihu/star.jpg" alt=""></strong><strong class="fr">0.00元</strong></h6>
+			</li>
+			<li class="right fr"></li>
+		</ul></a>
+		<a href="g个人介绍_2.html"><ul class="intro gWidth">
+			<li class="left"><span><img src="" alt=""></span></li>
+			<li class="cent">
+				<h6><span class="fl">服务内容-称呼</span><em class="fr">1000千米</em></h6>
+				<h6><strong class="fl"><img src="images/weixiuweihu/star.jpg" alt=""></strong><strong class="fr">0.00元</strong></h6>
+			</li>
+			<li class="right fr"></li>
+		</ul></a>
+	</div>
+	
+	<h5>没有更多内容</h5>
+	
+	<h4 class="post gWidth"><a href="f发布需求.html"><span>发布需求</span></a></h4>
+
+
+</body>
+</html>

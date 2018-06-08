@@ -1,0 +1,20 @@
+@charset "utf-8";
+body{background-color: #F7F7F7;}
+.top{height: 5.35rem; background-color: #DB201B;position: relative;}
+.shang a{color: #fff;width: 2rem;text-align: center;}
+.shang a:hover{background:rgba(236,236,251,.2); height: 2.025rem;}
+.shang a img{width: 0.85rem;height: 0.85rem;background-size:0.85rem 0.85rem; vertical-align: middle;}
+.xia{position: absolute;left: 0.875rem;bottom: -1.9rem;}
+.xia img{width: 3.8rem;height: 3.8rem;border-radius: 50%;border: 0.15rem solid #fff;}
+.xia_r{position: absolute;left: 5.375rem;bottom: 0.45rem;}
+.xia_r span{color: #fff;font-size: 0.9rem;margin-right: 0.45rem;}
+.xia_r img{width: 1.15rem;height: 1.15rem;background-size: 1.15rem 1.15rem;vertical-align: middle;}
+.xinxi p{font-size: 0.65rem;line-height: 1.45rem;margin-left:5.375rem;}
+.c_red{color: #DF2322;}
+.c_hui{color: #616161;}
+.pj_sq .pj_a{display: block; width: 15.125rem;height: 2.1rem;line-height: 2.1rem;border-top:0.025rem solid #ccc;
+	            border-bottom:0.025rem  solid #ccc;margin: 0.95rem auto 0.65rem;font-size: 0.65rem;}
+.pj_sq em{margin-right: 0.5rem;}
+.pj_sq .sp2{margin:0 0.5rem 0 1rem ;font-size: 0.8rem;}
+.pj_sq .sq_a{display: block; width: 15.125rem;height: 2.1rem;line-height: 2.1rem; text-align: center;color: #fff;
+	           font-size: 0.75rem;background-color:#DF2322;border-radius: 0.2rem; margin: 0 auto; }

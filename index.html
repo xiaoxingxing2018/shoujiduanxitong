@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="js/swiper-3.4.2.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+    <script>
+        window.onload = window.onresize = function(){
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+
+            var _html = document.getElementsByTagName('html')[0];
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        }
+    </script>
+</head>
+<body>
+
+<!--侧边栏-->
+<div class="menu">
+    <div class="Avatar">
+        <a href="个人信息.html"><img src="images/index/touxiang_03.jpg" alt=""></a>
+    </div>
+
+    <div class="peopleInfo">
+        <a href="#" class="name">凛冬将至</a><br>
+        <a href="#" class="money">余额：0.00元</a>
+    </div>
+    
+    <ul>
+        <li id="indexBox">
+            <img id="indexImg" src="images/index/index_03.png" alt="">
+            <img id="indexClickImg" src="images/index/indexClick_03.png" alt="">
+            <div class="right">
+                <p id="indexP">首页</p>
+                <!--第一个img标签是用来解决bug的-->
+                <img src="" alt="" style="width: 0;height: 0;display: none;">
+                <img id="indexAfterClick" src="images/index/afterClick_06.png" alt="">
+                <img id="indexAfter" src="images/index/after_03.png" alt="">
+            </div>
+        </li>
+        <li id="fadanBox">
+            <img id="fadanImg" src="images/index/fadan_03.png" alt="">
+            <img id="fadanClickImg" src="images/index/fadanClick_03.png" alt="">
+            <div class="right">
+                <p id="fadanP">发单</p>
+                <img src="" alt="" style="width: 0;height: 0;display: none;">
+                <img id="fadanAfterClick" src="images/index/afterClick_06.png" alt="">
+                <img id="fadanAfter" src="images/index/after_03.png" alt="">
+            </div>
+        </li>
+        <li id="shenqingBox" onclick="shenqing()">
+            <img id="shenqingImg" src="images/index/shenqing_03.png" alt="">
+            <img src="images/index/shenqing_03.png" alt="">
+            <div class="right">
+                <p>申请服务商</p>
+                <img src="" alt="" style="width: 0;height: 0;display: none;">
+                <img src="images/index/after_03.png" alt="">
+            </div>
+        </li>
+        <li id="xiaoxiBox">
+            <img id="xiaoxiImg" src="images/index/xiaoxi_03.png" alt="">
+            <img id="xiaoxiClickImg" src="images/index/xiaoxiClick_03.png" alt="">
+            <div class="right">
+                <p id="xiaoxiP">消息</p>
+                <img src="" alt="" style="width: 0;height: 0;display: none;">
+                <img id="xiaoxiAfterClick" src="images/index/afterClick_06.png" alt="">
+                <img id="xiaoxiAfter" src="images/index/after_03.png" alt="">
+            </div>
+        </li>
+        <li id="caigouBox" onclick="caigou()">
+            <img src="images/index/caigou_03.png" alt="">
+            <img src="images/index/caigou_03.png" alt="">
+            <div class="right">
+                <p>办公采购</p>
+                <img src="" alt="" style="width: 0;height: 0;display: none;">
+                <img src="images/index/after_03.png" alt="">
+            </div>
+        </li>
+    </ul>
+    <img src="images/index/logo_07.jpg" alt="" class="logo">
+</div>
+
+
+
+<!--主页-->
+<div class="index">
+
+    <!--<div class="underMain"></div>-->
+    <div class="onMain"></div>
+
+    <header>
+        <img class="openLeftMenu" id="OpenLeftMenu1" src="images/index/openmenu_03.jpg" alt="">
+        <img src="images/index/there_03.jpg" alt="" class="there" id="thereImg">
+        <h1 id="there">廊坊市</h1>
+        <a href="f发布需求.html"><img src="images/index/release_03.jpg" alt="" class="release"></a>
+    </header>
+
+    <div class="writePlace">
+        <input id="placeValue" type="text">
+        <!--<div id="writeTrue" class="true" onclick="alterPlace()"><p>确认</p></div>-->
+        <div id="writeTrue" class="true"><p>确认</p></div>
+        <div id="writeFalse" class="false"><p>取消</p></div>
+    </div>
+
+    <div class="banner">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/banner/banner1.png" />
+				</div>
+				<div class="swiper-slide">
+					<img src="images/banner/banner1.png" />
+				</div>
+				<div class="swiper-slide">
+					<img src="images/banner/banner1.png" />
+				</div>
+			</div>
+			<div class="swiper-pagination"></div> 
+		</div>
+    </div>
+
+    <ul class="navBox">
+        <li>
+            <a href="w维修维护.html"><img src="images/index/weixiuweihu.png" alt=""></a>
+            <a href="w维修维护.html" class="title">维修维护</a>
+        </li>
+        <li>
+            <a href="y印刷设计.html"><img src="images/index/yinshuasheji.png" alt=""></a>
+            <a href="y印刷设计.html" class="title">印刷设计</a>
+        </li>
+        <li>
+            <a href="r人才服务.html"><img src="images/index/rencaifuwu.png" alt=""></a>
+            <a href="r人才服务.html" class="title">人才服务</a>
+        </li>
+        <li>
+            <a href="w物流快递.html"><img src="images/index/wuliukuaidi.png" alt=""></a>
+            <a href="w物流快递.html" class="title">物流快递</a>
+        </li>
+        <li>
+            <a href="z资源共享.html"><img src="images/index/ziyuangongxiang.png" alt=""></a>
+            <a href="z资源共享.html" class="title">资源共享</a>
+        </li>
+        <li>
+            <a href="j技能共享.html"><img src="images/index/jinenggongxiang.png" alt=""></a>
+            <a href="j技能共享.html" class="title">技能共享</a>
+        </li>
+        <li>
+            <a href="w物资采购.html"><img src="images/index/wuzicaigou.png" alt=""></a>
+            <a href="w物资采购.html" class="title">办公采购</a>
+        </li>
+        <li>
+            <a href="f附近服务.html"><img src="images/index/moreNav_15.jpg" alt=""></a>
+            <a href="f附近服务.html" class="title">更多</a>
+        </li>
+    </ul>
+
+    <div class="serveBox">
+        <img src="images/index/fuwu_19.jpg" alt="">
+        <a href="f附近服务.html">附近服务</a>
+        <img src="images/index/xuqiu_22.jpg" alt="">
+        <a href="f附近需求.html">附近需求</a>
+    </div>
+    
+    <ul class="people">
+        <li class="info">
+            <img src="images/index/photo_03.jpg" alt="" class="photo">
+            <p class="name">纪录片拍摄-曾导演</p>
+            <img src="images/index/xingji_03.jpg" alt="" class="xingji">
+            <p class="way">距离：88.6千米</p>
+            <img src="images/index/go_19.jpg" alt="" class="go">
+        </li>
+        <li class="info">
+            <img src="images/index/photo_03.jpg" alt="" class="photo">
+            <p class="name">纪录片拍摄-曾导演</p>
+            <img src="images/index/xingji_03.jpg" alt="" class="xingji">
+            <p class="way">距离：88.6千米</p>
+            <img src="images/index/go_19.jpg" alt="" class="go">
+        </li>
+        <li class="info">
+            <img src="images/index/photo_03.jpg" alt="" class="photo">
+            <p class="name">纪录片拍摄-曾导演</p>
+            <img src="images/index/xingji_03.jpg" alt="" class="xingji">
+            <p class="way">距离：88.6千米</p>
+            <img src="images/index/go_19.jpg" alt="" class="go">
+        </li>
+        <li class="info">
+            <img src="images/index/photo_03.jpg" alt="" class="photo">
+            <p class="name">纪录片拍摄-曾导演</p>
+            <img src="images/index/xingji_03.jpg" alt="" class="xingji">
+            <p class="way">距离：88.6千米</p>
+            <img src="images/index/go_19.jpg" alt="" class="go">
+        </li>
+        <li class="info">
+            <img src="images/index/photo_03.jpg" alt="" class="photo">
+            <p class="name">纪录片拍摄-曾导演</p>
+            <img src="images/index/xingji_03.jpg" alt="" class="xingji">
+            <p class="way">距离：88.6千米</p>
+            <img src="images/index/go_19.jpg" alt="" class="go">
+        </li>
+    </ul>
+</div>
+
+
+
+
+<!--发单页-->
+<div class="fadanMain">
+    <div class="onMain"></div>
+
+    <header>
+        <img id="OpenLeftMenu2" src="images/index/moreNav_15.jpg" alt="" class="openLeftMenu">
+        <div id="fadanTitle1" class="titleLeft"><p>未完成订单</p></div>
+        <div id="fadanTitle2" class="titleRight"><p>已完成订单</p></div>
+    </header>
+
+    <div id="fadanCon1" class="main">
+        <p>没有更多内容</p>
+    </div>
+
+    <div id="fadanCon2" class="main">
+        <p>没有更多内容</p>
+    </div>
+</div>
+
+
+
+<!--消息页-->
+<div class="xiaoxiMain">
+    <div class="onMain"></div>
+
+    <header>
+        <img id="OpenLeftMenu3" src="images/index/moreNav_15.jpg" alt="" class="openLeftMenu">
+        <div id="xiaoxiTitle1" class="titleLeft"><p>消息通知</p></div>
+        <div id="xiaoxiTitle2" class="titleRight"><p>系统消息</p></div>
+    </header>
+
+    <div id="xiaoxiCon1" class="main">
+        <p>没有更多内容</p>
+    </div>
+
+    <div id="xiaoxiCon2" class="main">
+        <p>没有更多内容</p>
+    </div>
+</div>
+
+
+
+</body>
+
+<script src="js/index.js"></script>
+
+</html>

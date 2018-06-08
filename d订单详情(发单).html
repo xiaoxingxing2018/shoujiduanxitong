@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单详情(发单)</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/d订单详情.css">
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<script src="js/windowback.js"></script>
+	<script>
+        window.onload = window.onresize = function(){
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+
+            var _html = document.getElementsByTagName('html')[0];
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        }
+    </script>
+</head>
+<body>
+	
+	
+	
+	<div class="head">
+		<a href="#" onclick="back()" class="return fl"></a>
+		<h4 class="gWidth">订单详情</h4>
+		<a href="t投诉.html" class="tousu fr">投诉</a>
+	</div>
+	<div class="cont gWidth">
+		<div class="top gWidth">
+			<div>
+				<p class="tx fl"><span class="touxiang"><img src=""></span></p>
+				<p class="name">客户姓名</p>
+				<p class="time">1天前</p>
+			</div>
+		</div>
+		
+		<div class="mid gWidth">
+			<ul>
+				<li><span class="neirongming fl">订单编号</span><span class="neirong fl">aaa111bbb222ccc333</span></li>
+				<li><span class="neirongming fl">服务类型</span><span class="neirong fl">服务类型</span></li>
+				<li><span class="neirongming fl">预约时间</span><span class="neirong fl">时间时间</span></li>
+				<li><span class="neirongming fl">服务地点</span><span class="neirong fl">地点地点</span></li>
+				<li><span class="neirongming fl">服务报酬</span><span class="neirong color fl">0.00元</span></li>
+				<li><span class="neirongming fl">服务备注</span><span class="neirong fl">无</span></li>
+				<a class="status" href="d订单状态.html"><li ><span class="zt">订单状态</span><span class="zt_1 color">订单详情</span><span class="zt_2 color">&gt;</span></li></a>
+			</ul>
+		</div>
+			
+		<div class="btm gWidth">
+			<h3 class="waiter">接单人</h3>
+			<a href=""><div class="person">
+				<span class="pt fl"><img src=""></span>
+			</div></a>
+		</div>
+		
+		
+			<p class="ddzt">订单状态</p>
+		
+	</div>
+	
+	
+
+
+
+</body>
+</html>

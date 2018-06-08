@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/注册2.css">
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<script>
+        window.onload = window.onresize = function(){
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+
+            var _html = document.getElementsByTagName('html')[0];
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        }
+    </script>
+</head>
+<body>
+	<div class="logo gWidth">
+		<img src="images/logo_1.png" alt="">
+	</div>
+	<div class="content ">
+      <form>
+        <span>
+     	     <input type="tel" maxlength="11" placeholder="手机号" autofocus name="">
+     	  </span>
+     	  <span>
+     	     <input type="password"  placeholder="密码" autofocus>
+     	  </span>
+     	  <span>
+     	     <input type="password"  placeholder="确认密码" autofocus>
+     	  </span>
+     	  <input class="tj" type="submit" value="完成注册">
+     </form>
+	</div>
+</body>
+</html>

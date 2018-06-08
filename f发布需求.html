@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>请选择服务分类</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/f发布需求(列表页).css">
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<script src="js/windowback.js"></script>
+	<script>
+        window.onload = window.onresize = function(){
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+
+            var _html = document.getElementsByTagName('html')[0];
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        }
+    </script>
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div>
+		<a href="#" onclick="back()" class="return fl"></a>
+		<h4 class="gWidth"><strong id="filter"><span id="spn">请选择服务分类</span><em id="btm"></em></strong></h4>
+		
+		<ul id="box2">
+		<li class="active">需求名称</li>
+		<li>维修维护</li>
+		<li>印刷设计</li>
+		<li>人才服务</li>
+		<li>物流快递</li>
+		<li>资源共享</li>
+		<li>技能共享</li>
+		<li>工商税务</li>
+		<li>商标专利</li>
+		<li>网络软件</li>
+		<li>法律法务</li>
+		<li>庆典会务</li>
+		<li>装修装饰</li>
+		<li>搬家保洁</li>
+		<li>安防门禁</li>
+		<li>营销传媒</li>
+		<li>评估认证</li>
+		<li>物资采购</li>
+		<li>图文广告</li>
+		<li>融资借贷</li>
+		<li>场地园区</li>
+		</ul>
+       
+    <script>
+       var ofilter = document.getElementById('filter');
+       var obox2 = document.getElementById('box2');
+       var oli = obox2.getElementsByTagName('li');
+       var ospn = document.getElementById('spn');
+
+       var obtm = document.getElementById('btm');
+
+       ofilter.onclick = function() {
+       		if (obox2.style.height == oli.length*2.1+'rem'){
+       			obox2.style.height = '0';
+       			obtm.style.transform = 'rotate(0deg)';
+       		}else{
+       			obox2.style.height = oli.length*2.1+'rem';
+       			obtm.style.transform = 'rotate(180deg)';
+       		}
+
+       }
+       for (var i = 0; i < oli.length; i++) {
+       	oli[i].onclick = function (){
+       		for (var i = 0; i < oli.length; i++){
+       			oli[i].className = '';
+       		}
+       		this.className = 'active';
+       		 ofilter.onclick();
+       		 ospn.innerHTML = this.innerHTML;
+
+       	}
+       }
+
+    </script>			
+
+		
+		
+		
+	</div>
+	<div class="cont gWidth">
+		<p class="p1"><label for="price">价格范围</label><input type="number" id="price" placeholder="0" /><span>元</span></p>  
+        <p><label for="time">预约时间</label><input type="date" id="time" placeholder="请选择时间"/></p> 
+        <p><label for="place">预约地点</label><input type="text" id="place" placeholder="请输入预约地点"/></p> 
+		<textarea placeholder="备注（可选）"></textarea>	
+		<p class="yuyin"><a href="javascript:;"><img id="tapeFn" src="images/weixiuweihu/yuyin.jpg" alt=""></a></p>
+	</div>
+	<div class="gWidth">
+		<p class="need">发布需求</p>
+	</div>
+	
+	<div id="tape">
+		<img class="tapeImgs" src="images/tape/tape_01.jpg">
+		<p>松手以结束录音</p>
+	</div>
+
+	<script type="text/javascript">
+		
+		//点击开始录音 
+		var handleDown = $('#tapeFn');
+		var tape = $('#tape');
+		var tapeImgs = $('.tapeImgs');
+		var imgArray = ['images/tape/tape_01.jpg','images/tape/tape_02.jpg','images/tape/tape_03.jpg'];
+		//定义定时器
+		var timer = null;
+		//绑定按下事件
+		$(handleDown).bind('touchstart',tapeDownFn);
+		//绑定抬起事件
+		$(handleDown).bind('touchend',tapeUpFn);
+		//手指按下事件
+		function tapeDownFn(){
+			clearInterval(timer);
+			$(tapeImgs).attr('src',imgArray[0]);
+			//显示出tape
+			$(tape).css('display','block');
+			var num = 0;
+			timer = setInterval(function(){
+				$(tapeImgs).attr('src',imgArray[num]);
+				num++;
+				num = num <= 2 ? num : 0;
+			},300)
+		}
+		//手指抬起事件
+		function tapeUpFn(){
+			//隐藏出tape
+			$(tape).css('display','none');
+			//清除定时器
+			clearInterval(timer);
+			$(tapeImgs).attr('src',imgArray[0]);
+		}
+		
+		
+	</script>
+
+</body>
+</html>

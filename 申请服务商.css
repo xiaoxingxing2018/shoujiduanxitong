@@ -1,0 +1,18 @@
+@charset "utf-8";
+.top{height: 2.125rem;line-height:2.125rem;color: #DB331B;border-bottom: 0.1rem solid #DB331B;
+	    font-size: 0.8rem; text-align: center;background-color: #fff; position: relative;margin-bottom: 0.45rem;}
+.top a{position: absolute; left: 0; top:0; color:#DB331B; font-size: 1rem;width: 2.125rem;height: 2.125rem;}
+.top a:hover{background-color: #ECECFB;height: 2.025rem;}
+form{width: 14.05rem; margin: 0 auto; }
+form .tx{width: 3.875rem;height: 3.875rem;margin: 0 auto 0.75rem;}
+form .tx img{width: 3.875rem;height: 3.875rem;background-size: 3.875rem 3.875rem;}
+form .mak{width: 14.05rem; height: 2.075rem;line-height: 2.075rem; border: 1px solid #D2D2D2;border-radius: 0.2rem;
+	        margin-bottom: 0.5rem; background-color: #FAFAFA;}
+form span{float: left; font-size:0.75rem; width: 4rem;text-align: center; border-right: 0.05rem  solid #D2D2D2;}
+form input{float: right;font-size:0.75rem;line-height: 2.075rem; width: 9.5rem; color: #000;text-align:right;
+          padding-right: 0.5rem;}
+form select{float: right;font-size:0.75rem;margin-top: 0.55rem;}
+form a{font-size: 0.65rem;color: #686868;display:inline-block;width: 14.05rem;text-align: center;
+	     margin-bottom: 1.875em;text-decoration:underline;}
+form .tj{width: 14.05rem;height: 2rem;text-align:center; background-color:#DE1E1D;color: #fff;
+         font-size: 0.7rem;border-radius: 0.2rem;}

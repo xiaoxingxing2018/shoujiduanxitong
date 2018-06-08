@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/d订单状态.css">
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<script src="js/windowback.js"></script>
+	<script>
+        window.onload = window.onresize = function(){
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+
+            var _html = document.getElementsByTagName('html')[0];
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        }
+    </script>
+</head>
+<body>
+	
+<div class="all">
+	<div>
+		<h4 class="gWidth"><a href="#" onclick="back()" class="return fl"></a>订单状态</h4>
+	</div>
+	<div class="cont gWidth">
+		<ul class="status">
+			<li class="confirm">客户发单</li>
+			<li class="now">订单确认</li>
+			<li>工作完成</li>
+			<li>已付款</li>
+			<li>付款已确认</li>
+			<li>雇员已评价</li>
+			<li>雇主已评价</li>
+			<li>订单结束</li>
+			
+		</ul>
+		
+	</div>
+	
+</div>		
+
+
+
+</body>
+</html>

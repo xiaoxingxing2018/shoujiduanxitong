@@ -1,0 +1,12 @@
+@charset "utf-8";
+.logo {width: 8.45rem; height: 2.025rem; margin-top: 4.45rem; margin-bottom:3.225rem;}
+.logo img{width: 8.45rem; height: 2.025rem; background-size:8.45rem 2.025rem;}
+form{width: 14.2rem;margin: 0 auto;}
+form .sj{width: 0.625rem;height: 0.9rem;background-size:0.625rem 0.9rem;margin-right:0.6rem; vertical-align:middle;}
+form .suo{width: 0.775rem;height: 0.9rem;background-size:0.775rem 0.9rem;margin-right: 0.55rem; vertical-align:middle;}
+form input{width: 12.85rem;height: 0.9rem; line-height: 0.9rem;font-size: 0.75rem ;color: #000;}
+form span{display: inline-block; width: 14.2rem; border-bottom: 0.05rem  solid #AAAAAA; padding-bottom: 0.55rem;
+	        margin-bottom: 1rem;box-sizing: border-box;}
+form .tj{margin:0.775rem 0 1rem;width: 14.2rem;height: 2rem;text-align:center; background-color:#DE1E1D;color: #fff;
+         font-size: 0.7rem;border-radius: 0.2rem;}
+.footer a{display:inline-block;width:16rem;text-decoration:underline;font-size: 0.75rem;text-align:center;color: #727272;}
